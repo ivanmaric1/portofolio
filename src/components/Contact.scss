@@ -1,0 +1,60 @@
+.Contact {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  color: #5e6b66;
+
+  h1 {
+    color: #87eac5;
+  }
+
+  &-info {
+    flex: 2;
+    padding: 0rem 4rem;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    &-img {
+      display: flex;
+      justify-content: space-evenly;
+      img {
+        height: 150px;
+      }
+    }
+  }
+
+  &-form {
+    flex: 3;
+    padding: 2rem;
+    font-size: 1.2rem;
+
+    input,
+    textarea {
+      display: block;
+      width: 80%;
+      margin: 1rem 0;
+      font-size: 1.3rem;
+      font-family: 'Montserrat', sans-serif;
+      padding: 0.5rem;
+      color: #5e6b66;
+      border: 1px solid #87eac5;
+    }
+
+    textarea {
+      height: 30vh;
+    }
+
+    &-btn {
+      width: 40%;
+      background-color: #87eac5;
+      font-size: 1.3rem;
+      padding: 0.5rem;
+      font-family: 'Montserrat', sans-serif;
+      border: 1px solid transparent;
+      cursor: pointer;
+    }
+  }
+}
