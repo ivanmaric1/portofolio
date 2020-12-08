@@ -46,6 +46,11 @@
       padding: 0.5rem;
       color: #5e6b66;
       border: 1px solid #eb9a88;
+
+      &:active,
+      &:focus {
+        outline: none;
+      }
     }
 
     textarea {
