@@ -3,7 +3,7 @@ import profile from '../img/profile.png';
 
 const Home = () => {
   return (
-    <div className="Home" id="home">
+    <div className="Home section" id="home">
       <div className="Home-img">
         <img src={profile} alt="" />
       </div>
@@ -11,6 +11,7 @@ const Home = () => {
         <p>Hi, my name is</p>
         <h1>Ivan</h1>
         <p>I build things for the web.</p>
+        <button className="Home-btn">Contact me</button>
       </div>
     </div>
   );

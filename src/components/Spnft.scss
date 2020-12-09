@@ -1,0 +1,35 @@
+.Spnft {
+  background-color: #cdeff7;
+  height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+  animation: slideFromBottom 2s ease-out;
+  opacity: 1;
+  transform: translateY(0);
+  overflow: auto;
+
+  &-header {
+    text-align: center;
+
+    h1 {
+      margin-top: 0;
+    }
+  }
+
+  &-mobile {
+    display: flex;
+
+    .mobile-pic {
+      height: 300px;
+      margin: 0.5rem;
+    }
+  }
+}
+
+@keyframes slideFromBottom {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

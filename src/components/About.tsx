@@ -13,7 +13,7 @@ import github from '../img/programs/github.png';
 
 const About = () => {
   return (
-    <div className="About" id="about">
+    <div className="About section" id="about">
       <ul className="About-programs">
         <li>
           <img src={html} alt="" />

@@ -25,7 +25,7 @@ const Contact = () => {
   elements.forEach((element) => intersectionObserver.observe(element));
 
   return (
-    <div className="Contact" id="contact">
+    <div className="Contact section" id="contact">
       <div className="Contact-info">
         <div className="Contact-info-img">
           <img src={contact1} alt="contactImage" className="contact" />

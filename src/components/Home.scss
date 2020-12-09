@@ -18,9 +18,51 @@
       margin: 0;
     }
 
+    .dark {
+      color: #5e6b66;
+    }
+
     h1 {
       color: #5e6b66;
       margin: 0;
+    }
+  }
+
+  &-btn {
+    font-family: 'Montserrat', sans-serif;
+    padding: 1rem 2rem;
+    color: #87eac5;
+    border: 1px solid #87eac5;
+    background-color: #5e6b66;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    position: relative;
+    cursor: pointer;
+
+    &:active,
+    &:focus {
+      outline: none;
+    }
+
+    &::after {
+      content: '';
+      display: inline-block;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      transition: all 0.4s;
+    }
+
+    &::after {
+      background-color: #87eac5;
+    }
+
+    &:hover::after {
+      transform: scale(1.6);
+      opacity: 0;
     }
   }
 }
