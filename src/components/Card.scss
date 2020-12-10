@@ -1,10 +1,13 @@
 .Card {
   font-family: 'Montserrat', sans-serif;
   border: 1px solid #5e6b66;
-  padding: 2rem 3rem;
+  padding: 1rem 3rem;
   margin: 2rem 0;
+  position: relative;
 
   &-img {
+    display: block;
+    height: auto;
     display: flex;
     justify-content: space-between;
     img {
@@ -12,8 +15,50 @@
     }
   }
 
+  &:hover &-info {
+    height: 100%;
+  }
+
   &-info {
-    color: #5e6b66;
+    box-sizing: border-box;
+    color: #606e69;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #d1eee4;
+    opacity: 0.95;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: 0.6s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 2rem;
+
+    h2 {
+      margin-bottom: 0;
+    }
+
+    &-tool {
+      display: flex;
+      align-items: center;
+    }
+
+    &-details {
+      display: flex;
+      width: 70%;
+      font-size: 0.8rem;
+      justify-content: space-between;
+      align-items: center;
+
+      img {
+        margin-left: 1rem;
+        height: 50px;
+      }
+    }
+
     &-links {
       a {
         position: relative;
@@ -29,7 +74,7 @@
           content: '';
           position: absolute;
           background-color: #5e6b66;
-          z-index: -1;
+          z-index: 10;
           height: 2px;
         }
 

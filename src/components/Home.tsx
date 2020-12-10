@@ -1,5 +1,5 @@
 import './Home.scss';
-import profile from '../img/profile.png';
+import profile from '../img/profile2.png';
 
 const Home = () => {
   return (
