@@ -12,17 +12,32 @@ const Navigation = () => {
       </a>
       <ul className="Navigation-list">
         <li>
-          <NavHashLink activeClassName="active" smooth to="#about">
+          <NavHashLink
+            activeClassName="active"
+            className="about"
+            smooth
+            to="#about"
+          >
             About
           </NavHashLink>
         </li>
         <li>
-          <NavHashLink activeClassName="active" smooth to="#work">
+          <NavHashLink
+            activeClassName="active"
+            className="work"
+            smooth
+            to="#work"
+          >
             Work
           </NavHashLink>
         </li>
         <li>
-          <NavHashLink activeClassName="active" smooth to="#contact">
+          <NavHashLink
+            activeClassName="active"
+            className="contact"
+            smooth
+            to="#contact"
+          >
             Contact
           </NavHashLink>
         </li>
