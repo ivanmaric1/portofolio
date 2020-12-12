@@ -1,5 +1,5 @@
 import './Home.scss';
-import profile from '../img/profile2.png';
+import profile from '../img/profile.png';
 
 const Home = () => {
   return (
@@ -11,7 +11,7 @@ const Home = () => {
         <p>Hi, my name is</p>
         <h1>Ivan</h1>
         <p>I build things for the web.</p>
-        <button className="Home-btn">Contact me</button>
+        <button className="Home-btn"> Contact me</button>
       </div>
     </div>
   );

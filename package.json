@@ -1,5 +1,6 @@
 {
   "name": "portofolio",
+  "homepage": "http://www.ivanscript.com/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -13,6 +14,7 @@
     "@types/react-router": "^5.1.8",
     "@types/react-router-hash-link": "^1.2.1",
     "@types/smooth-scroll": "^16.1.0",
+    "emailjs-com": "^2.6.4",
     "node-sass": "^4.14.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",

@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
+import Navigation from './components/Navigation';
 import Home from './components/Home';
 import About from './components/About';
 import Work from './components/Work';
 import Contact from './components/Contact';
-import Navigation from './components/Navigation';
+import Footer from './components/Footer';
 import Spnft from './components/Spnft';
 import './App.scss';
 
@@ -17,6 +18,7 @@ const App = () => {
       <About />
       <Work setPage={setPage} />
       <Contact />
+      <Footer />
     </div>
   ) : (
     <Spnft setPage={setPage} />

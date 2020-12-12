@@ -18,29 +18,26 @@ const About = () => {
   return (
     <div className="About section" id="about">
       <div className="About-info">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis animi
-        nemo nihil magni excepturi veniam quae iste, deserunt, accusantium
-        exercitationem asperiores? Praesentium dolores voluptates labore natus.
-        Modi placeat vitae ad labore, perspiciatis laborum tenetur vel accusamus
-        sit nesciunt architecto possimus temporibus! Dolorem sunt asperiores
-        dolorum facere libero voluptas nulla amet sequi laboriosam nisi facilis
-        dignissimos dolor accusantium aut vel sit, quod eos corrupti maiores
-        quidem sed! Unde repellendus necessitatibus maxime beatae? Eos ex
-        similique, quia minus hic itaque, vel pariatur veritatis suscipit,
-        nostrum accusantium incidunt sequi sunt. Numquam repellendus non
-        ratione, iste tenetur nobis iusto dolorum ducimus corrupti! Eum beatae
-        aperiam quo placeat facilis reprehenderit, cum fuga! Consectetur
-        deleniti totam et ullam aut sequi repudiandae eos harum esse! Soluta
-        numquam corporis aliquam nostrum, rem labore dolorum voluptate minus
-        cumque? Tenetur ratione quidem commodi dolore voluptas praesentium,
-        reprehenderit laboriosam sequi maiores aspernatur, temporibus molestiae!
-        Quasi officia illum dolores? Vitae excepturi mollitia perspiciatis
-        exercitationem ut aspernatur inventore eum dicta sed porro deleniti
-        labore adipisci voluptate totam similique dolorum, facilis culpa aliquam
-        quae. Natus, quidem. Corporis explicabo facere totam eum illum adipisci
-        quam ut perspiciatis in, labore, similique neque eveniet, tempore harum
-        assumenda molestiae. Esse, possimus labore aspernatur quos vero culpa
-        voluptas autem.
+        <div className="About-info">
+          <h3>Hi, my name is Ivan</h3>
+          <p>I am a front-end developer</p>
+          <p>
+            I'm passionate about creating awesome websites/web applications with
+            modern tools.
+          </p>
+          <p>
+            I'm a graduate of Lyceum of the Philippines University with a degree
+            in Bachelor of Arts in Multimedia Arts.
+          </p>
+          <p>
+            I prefer to keep learning, continuo challenging myself and do
+            interesting things that matter.{' '}
+          </p>
+          <p>
+            I am currently looking for a job in the Zagreb area and updating my
+            portofolio.{' '}
+          </p>
+        </div>
         <ul className="About-programs">
           <li>
             <img src={html} alt="" />

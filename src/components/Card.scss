@@ -1,7 +1,7 @@
 .Card {
   font-family: 'Montserrat', sans-serif;
-  border: 1px solid #5e6b66;
-  padding: 1rem 3rem;
+  border: 1px solid transparent;
+  padding: 1rem 2rem;
   margin: 2rem 0;
   position: relative;
 
@@ -10,6 +10,10 @@
     height: auto;
     display: flex;
     justify-content: space-between;
+
+    &-mobile {
+      margin-left: 1rem;
+    }
     img {
       height: 300px;
     }
@@ -101,6 +105,185 @@
             left: 100%;
             width: 0%;
             transition: all ease 0.2s;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 200px) and (max-width: 600px) {
+  .Card {
+    padding: 0.5rem 1rem;
+    margin: 2rem auto;
+    position: relative;
+    width: 90%;
+
+    &-img {
+      display: block;
+      height: auto;
+
+      &-mobile {
+        display: none;
+      }
+      img {
+        height: 200px;
+        margin: auto;
+      }
+    }
+
+    &-info {
+      padding: 0 1rem;
+      font-size: 0.7rem;
+
+      &-details {
+        width: 100%;
+        font-size: 0.6rem;
+        justify-content: space-between;
+
+        img {
+          height: 30px;
+        }
+      }
+
+      &-links {
+        a {
+          &::before,
+          &::after {
+            height: 1px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 800px) {
+  .Card {
+    padding: 0.5rem 1rem;
+    margin: 2rem auto;
+    position: relative;
+    width: 80%;
+
+    &-img {
+      display: block;
+      height: auto;
+
+      &-mobile {
+        display: none;
+      }
+      img {
+        height: 220px;
+        margin: auto;
+      }
+    }
+
+    &-info {
+      padding: 0 1rem;
+      font-size: 0.8rem;
+
+      &-details {
+        width: 100%;
+        font-size: 0.7rem;
+        justify-content: space-between;
+
+        img {
+          height: 35px;
+        }
+      }
+
+      &-links {
+        a {
+          &::before,
+          &::after {
+            height: 1px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+  .Card {
+    padding: 0.5rem 1rem;
+    margin: 2rem auto;
+    position: relative;
+    width: 80%;
+
+    &-img {
+      display: flex;
+      height: auto;
+      justify-content: space-evenly;
+
+      img {
+        height: 220px;
+        margin: auto;
+      }
+    }
+
+    &-info {
+      padding: 0 1rem;
+      font-size: 0.8rem;
+
+      &-details {
+        width: 100%;
+        font-size: 0.7rem;
+        justify-content: space-between;
+
+        img {
+          height: 35px;
+        }
+      }
+
+      &-links {
+        a {
+          &::before,
+          &::after {
+            height: 1px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1280px) {
+  .Card {
+    padding: 0.5rem 1rem;
+    margin: 2rem auto;
+    position: relative;
+    width: 80%;
+
+    &-img {
+      display: flex;
+      height: auto;
+      justify-content: space-evenly;
+
+      img {
+        height: 260px;
+      }
+    }
+
+    &-info {
+      padding: 0 1rem;
+      font-size: 1rem;
+
+      &-details {
+        width: 100%;
+        font-size: 0.9rem;
+        justify-content: space-between;
+
+        img {
+          height: 40px;
+        }
+      }
+
+      &-links {
+        a {
+          &::before,
+          &::after {
+            height: 1px;
           }
         }
       }

@@ -12,7 +12,7 @@ const SpnftCard: React.FC<Props> = ({ setPage }) => {
     <div className="Card">
       <div className="Card-img">
         <img src={spnft} alt="projectImage" className="Card-img" />
-        <img src={mobile} alt="projectImage" className="Card-img" />
+        <img src={mobile} alt="projectImage" className="Card-img-mobile" />
       </div>
       <div className="Card-info">
         <h2>SPNFT</h2>

@@ -13,7 +13,7 @@ const ScreenCard: React.FC<Props> = ({ setPage }) => {
     <div className="Card">
       <div className="Card-img">
         <img src={screen} alt="projectImage" className="Card-img" />
-        <img src={mobile} alt="projectImage" className="Card-img" />
+        <img src={mobile} alt="projectImage" className="Card-img-mobile" />
       </div>
       <div className="Card-info">
         <h2>SCREEN</h2>
@@ -26,10 +26,7 @@ const ScreenCard: React.FC<Props> = ({ setPage }) => {
             <img src={type} alt="reactLogo" />
           </div>
         </div>
-        <p>
-          This app fight against money laundering and terrorist financing in
-          gambling Industry.
-        </p>
+        <p>Web shop</p>
         <div className="Card-info-links">
           <a href="#" onClick={() => setPage('spnft')}>
             Wiew Project Details
