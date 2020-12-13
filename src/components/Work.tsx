@@ -7,11 +7,9 @@ import ScreenCard from './ScreenCard';
 
 import './Work.scss';
 
-interface Props {
-  setPage: (page: string) => void;
-}
+interface Props {}
 
-const Work: React.FC<Props> = ({ setPage }) => {
+const Work: React.FC<Props> = () => {
   return (
     <div className="Work section" id="work">
       <div className="Work-img">
@@ -20,8 +18,8 @@ const Work: React.FC<Props> = ({ setPage }) => {
         <img src={work3} alt="workImage" />
       </div>
       <div className="Work-projects">
-        <SpnftCard setPage={setPage} />
-        <ScreenCard setPage={setPage} />
+        <SpnftCard />
+        <ScreenCard />
       </div>
     </div>
   );

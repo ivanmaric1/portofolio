@@ -2,10 +2,10 @@ import mobile1 from '../img/projects/spnft/phone1.png';
 import mobile2 from '../img/projects/spnft/phone2.png';
 import mobile3 from '../img/projects/spnft/phone3.png';
 import mobile4 from '../img/projects/spnft/phone4.png';
-import create from '../img/projects/spnft/create.png';
+import info from '../img/projects/spnft/info.png';
 import entry from '../img/projects/spnft/entry.png';
 import main from '../img/projects/spnft/main.png';
-import sort from '../img/projects/spnft/sort.png';
+import login from '../img/projects/spnft/login.png';
 import './Spnft.scss';
 
 interface Props {
@@ -64,24 +64,10 @@ const Spnft: React.FC<Props> = ({ setPage }) => {
         </div>
       </div>
       <div className="Spnft-pages">
-        <div className="Spnft-pages-page">
-          <img src={create} alt="projectPage" />
-          {/* <p>
-            Through this form we create the customer, the data is saved in the
-            database.
-          </p> */}
-        </div>
-        <div className="Spnft-pages-page">
-          <img src={entry} alt="projectPage" />
-          <p>
-            Through this form we enter transactions with the required
-            parameters.
-          </p>
-        </div>
-        <div className="Spnft-pages-page">
-          <img src={main} alt="projectPage" />
-          <p>Through this form we can easily find the user we need</p>
-        </div>
+        <img src={login} alt="projectPage" />
+        <img src={info} alt="projectPage" />
+        <img src={entry} alt="projectPage" />
+        <img src={main} alt="projectPage" />
       </div>
       <div className="Spnft-mobile">
         <img src={mobile1} alt="" className="mobile-pic" />

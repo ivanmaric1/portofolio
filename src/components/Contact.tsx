@@ -5,25 +5,6 @@ import contact2 from '../img/contact2.png';
 import contact3 from '../img/contact3.png';
 
 const Contact = () => {
-  // const animate = (element) => element.classList.add('animate');
-  // const isAnimated = (element) => element.classList.contains('animate');
-
-  // const intersectionObserver = new IntersectionObserver((entries, observer) => {
-  //   entries.forEach((entry) => {
-  //     if (entry.intersectionRatio > 0) {
-  //       animate(entry.target);
-  //     }
-  //     observer.unobserve(entry.target);
-  //   });
-  // });
-
-  // const elements = [].filter.call(
-  //   document.querySelectorAll('.contact'),
-  //   (element) => !isAnimated(element)
-  // );
-
-  // elements.forEach((element) => intersectionObserver.observe(element));
-
   const sendEmail = (e: any) => {
     e.preventDefault();
     console.log(e.target);

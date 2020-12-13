@@ -1,20 +1,30 @@
 .Spnft {
-  margin: auto;
-  padding: 2rem 0;
-  background-color: #cdeff7;
   font-family: 'Montserrat', sans-serif;
   color: #5e6b66;
+  display: flex;
+  background-color: #b2a0eb;
+  flex-direction: column;
+  padding: 1rem;
+  display: none;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  overflow: auto;
+  animation: show 1s;
 
   &-header {
     display: flex;
     flex-direction: column;
     align-items: center;
-
     &-btn {
       align-self: flex-start;
-      margin-left: 100px;
-      color: #b2a0eb;
-      border: 1px solid #b2a0eb;
+      color: #fff;
+      border: 1px solid #fff;
       background-color: transparent;
       font-size: 1.2rem;
       padding: 0.5rem 1rem;
@@ -22,67 +32,58 @@
       transition: all 0.8s ease-out;
 
       &:hover {
-        color: #cdeff7;
-        background-color: #b2a0eb;
+        color: #b2a0eb;
+        background-color: #fff;
       }
     }
+
     h1 {
-      margin: 0;
-      color: #b2a0eb;
+      margin-bottom: 0;
     }
   }
 
   &-info {
-    padding: 20px 100px;
     display: flex;
-    line-height: 1.5;
+    justify-content: center;
+    font-size: 0.8rem;
+    width: 100%;
+
+    &-background,
+    &-box {
+      flex: 1;
+    }
 
     &-box {
       display: flex;
       flex-direction: column;
-    }
-
-    &-background,
-    &-idea,
-    &-goal {
-      border: 1px solid #b2a0eb;
-      padding: 0.5rem 1rem;
-      font-size: 0.8rem;
-
-      h3 {
-        color: #b2a0eb;
-      }
+      justify-content: space-around;
     }
   }
 
   &-pages {
-    margin: 0 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 
-    &-page {
-      margin: 2rem 0;
-      display: flex;
-      border: 1px solid #b2a0eb;
-      img {
-        width: 50%;
-      }
-
-      p {
-        text-align: center;
-      }
+    img {
+      width: 35%;
+      margin: 1rem;
     }
   }
 
   &-mobile {
     display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
 
-    .mobile-pic {
+    img {
       height: 300px;
-      margin: 0.5rem;
     }
   }
 }
 
-@keyframes slideFromBottom {
+@keyframes show {
   from {
     opacity: 0;
   }

@@ -4,11 +4,9 @@ import mobile from '../img/projects/screen/mobile.png';
 import reac from '../img/programs/react.png';
 import type from '../img/programs/typescript.png';
 
-interface Props {
-  setPage: (page: string) => void;
-}
+interface Props {}
 
-const ScreenCard: React.FC<Props> = ({ setPage }) => {
+const ScreenCard: React.FC<Props> = () => {
   return (
     <div className="Card">
       <div className="Card-img">
@@ -16,21 +14,21 @@ const ScreenCard: React.FC<Props> = ({ setPage }) => {
         <img src={mobile} alt="projectImage" className="Card-img-mobile" />
       </div>
       <div className="Card-info">
-        <h2>SCREEN</h2>
-        <div className="Card-info-details">
-          <p>Project Completion : December 2020</p>
-          <p>Time to build: 35 days</p>
-          <div className="Card-info-tool">
-            <p>Main tool:</p>
-            <img src={reac} alt="reactLogo" />
-            <img src={type} alt="reactLogo" />
+        <div>
+          <h2>SCREEN</h2>
+          <div className="Card-info-details">
+            <p>Project Completion : December 2020</p>
+            <p>Time to build: 35 days</p>
+            <div className="Card-info-tool">
+              <p>Main tool:</p>
+              <img src={reac} alt="reactLogo" />
+              <img src={type} alt="reactLogo" />
+            </div>
           </div>
         </div>
-        <p>Web shop</p>
+        <p>Web shop that sells cell phones, tablets, and more...</p>
         <div className="Card-info-links">
-          <a href="#" onClick={() => setPage('spnft')}>
-            Wiew Project Details
-          </a>
+          <a href="#">Wiew Project Details</a>
           <a href="https://js314head.github.io/screen/" target="_blank">
             Wiew Project
           </a>

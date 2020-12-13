@@ -20,21 +20,13 @@ const About = () => {
       <div className="About-info">
         <div className="About-info">
           <h3>Hi, my name is Ivan</h3>
-          <p>I am a front-end developer</p>
           <p>
-            I'm passionate about creating awesome websites/web applications with
-            modern tools.
-          </p>
-          <p>
-            I'm a graduate of Lyceum of the Philippines University with a degree
-            in Bachelor of Arts in Multimedia Arts.
-          </p>
-          <p>
-            I prefer to keep learning, continuo challenging myself and do
-            interesting things that matter.{' '}
-          </p>
-          <p>
-            I am currently looking for a job in the Zagreb area and updating my
+            I am a front-end developer passionate about creating awesome
+            websites/web applications with modern tools. I studied at the
+            Technical Polytechnic in Zagreb and have a bachelor's degree in
+            computer design. My goal is always to keep learning, continuously
+            challenging myself and do interesting things that matter. I am
+            currently looking for a job in the Zagreb area and updating my
             portofolio.{' '}
           </p>
         </div>
