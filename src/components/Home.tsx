@@ -1,5 +1,6 @@
-import './Home.scss';
+import { NavHashLink } from 'react-router-hash-link';
 import profile from '../img/profile.png';
+import './Home.scss';
 
 const Home = () => {
   return (
@@ -11,7 +12,14 @@ const Home = () => {
         <p>Hi, my name is</p>
         <h1>Ivan</h1>
         <p>I build things for the web.</p>
-        <button className="Home-btn"> Contact me</button>
+        <NavHashLink
+          activeClassName="active"
+          className="Home-btn"
+          smooth
+          to="#contact"
+        >
+          Contact me
+        </NavHashLink>
       </div>
     </div>
   );

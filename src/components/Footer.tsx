@@ -1,6 +1,6 @@
-import './Footer.scss';
 import logo from '../img/logo.png';
 import github from '../img/github_footer.png';
+import './Footer.scss';
 
 const Footer = () => {
   return (

@@ -1,5 +1,3 @@
-import './Card.scss';
-import spnft from '../img/projects/spnft/spnft.png';
 import mobile from '../img/projects/spnft/phone4.png';
 import reac from '../img/programs/react.png';
 import mobile1 from '../img/projects/spnft/phone1.png';
@@ -10,25 +8,23 @@ import info from '../img/projects/spnft/info.png';
 import entry from '../img/projects/spnft/entry.png';
 import main from '../img/projects/spnft/main.png';
 import login from '../img/projects/spnft/login.png';
-import './Spnft.scss';
+import './Card.scss';
+import './SpnftCard.scss';
 
-interface Props {}
+interface Props {
+  setOverlay: (klasa: string) => void;
+  removeOverlay: (klasa: string) => void;
+}
 
-const SpnftCard: React.FC<Props> = () => {
-  const setOverlay = () => {
-    let element: any = document.querySelector('.Spnft');
-    element.style.display = 'block';
-  };
-  const removeOverlay = () => {
-    let element: any = document.querySelector('.Spnft');
-    element.style.display = 'none';
-  };
-
+const SpnftCard: React.FC<Props> = ({ setOverlay, removeOverlay }) => {
   return (
     <>
-      <div className="Spnft">
+      <div className="Spnft" data-simplebar>
         <div className="Spnft-header">
-          <button onClick={() => removeOverlay()} className="Spnft-header-btn">
+          <button
+            onClick={() => removeOverlay('Spnft')}
+            className="Spnft-header-btn"
+          >
             Back
           </button>
           <h1 className="Spnft-headline">SPNFT</h1>
@@ -111,16 +107,19 @@ const SpnftCard: React.FC<Props> = () => {
               Serves as a tool in fight against money laundering and terrorist
               financing in gambling Industry.
             </p>
+            <p className="Card-info-credentials">Login credentials:</p>
+            <p className="Card-info-credentials">Username: test@gmail.com</p>
+            <p className="Card-info-credentials">Password: 123456</p>
           </div>
           <div className="Card-info-links">
-            <a href="#" onClick={() => setOverlay()}>
-              Wiew Project Details
+            <a href="#" onClick={() => setOverlay('Spnft')}>
+              Project Details
             </a>
             <a href="https://js314head.github.io/spnft/" target="_blank">
-              Wiew Project
+              Live Project
             </a>
             <a href="https://github.com/js314head/spnft" target="_blank">
-              Wiew GitHub
+              GitHub Code
             </a>
           </div>
         </div>

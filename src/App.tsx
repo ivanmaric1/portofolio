@@ -9,7 +9,7 @@ import './App.scss';
 
 const App = () => {
   return (
-    <div className="App" id="App">
+    <div className="App" id="App" data-simplebar>
       <Navigation />
       <Home />
       <About />

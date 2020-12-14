@@ -1,2 +1,23 @@
 .App {
+  overflow: auto;
+  height: 100vh;
+}
+
+.simplebar-track.simplebar-vertical .simplebar-scrollbar:before {
+  background-image: linear-gradient(#87eac5, #5e6b66);
+}
+
+.simplebar-scrollbar.simplebar-visible:before {
+  opacity: 0.8;
+  transition: opacity 0s linear;
+}
+
+.simplebar-track.simplebar-vertical {
+  width: 14px;
+}
+
+@media screen and (min-width: 200px) and (max-width: 1000px) {
+  .simplebar-track.simplebar-vertical {
+    width: 0px;
+  }
 }

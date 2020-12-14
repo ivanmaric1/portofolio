@@ -1,8 +1,8 @@
-import emailjs from 'emailjs-com';
-import './Contact.scss';
 import contact1 from '../img/contact1.png';
 import contact2 from '../img/contact2.png';
 import contact3 from '../img/contact3.png';
+import emailjs from 'emailjs-com';
+import './Contact.scss';
 
 const Contact = () => {
   const sendEmail = (e: any) => {

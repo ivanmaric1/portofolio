@@ -1,19 +1,19 @@
 .Card {
-  font-family: 'Montserrat', sans-serif;
-  border: 1px solid transparent;
-  padding: 1rem 2rem;
-  margin: 2rem 0;
+  font-family: var(--main-font);
   position: relative;
+  margin: 2rem 0;
+  padding: 1rem 2rem;
+  border: 1px solid transparent;
 
   &-img {
-    display: block;
-    height: auto;
     display: flex;
     justify-content: space-between;
+    height: auto;
 
     &-mobile {
       margin-left: 1rem;
     }
+
     img {
       height: 325px;
     }
@@ -25,21 +25,21 @@
 
   &-info {
     box-sizing: border-box;
-    color: #606e69;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #d1eee4;
-    opacity: 0.95;
-    overflow: hidden;
-    width: 100%;
-    height: 0;
-    transition: 0.6s ease;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    position: absolute;
+    width: 100%;
+    height: 0;
     padding-left: 2rem;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--light-green);
+    color: var(--main-grey);
+    opacity: 0.95;
+    overflow: hidden;
+    transition: 0.4s ease;
 
     h2 {
       margin: 0;
@@ -52,10 +52,10 @@
 
     &-details {
       display: flex;
-      width: 70%;
-      font-size: 0.8rem;
       justify-content: space-between;
       align-items: center;
+      width: 70%;
+      font-size: 0.8rem;
 
       img {
         margin-left: 1rem;
@@ -63,23 +63,27 @@
       }
     }
 
+    &-credentials {
+      font-size: 0.8rem;
+    }
+
     &-links {
       a {
-        position: relative;
-        text-decoration: none;
         display: inline-block;
-        color: #5e6b66;
+        position: relative;
         padding: 0 1px;
-        margin-right: 2rem;
+        margin-right: 1rem;
+        text-decoration: none;
+        color: var(--main-grey);
         transition: color ease 0.3s;
 
         &::before,
         &::after {
           content: '';
           position: absolute;
-          background-color: #5e6b66;
-          z-index: 10;
           height: 2px;
+          background-color: var(--main-grey);
+          z-index: 10;
         }
 
         &::before {
@@ -102,8 +106,8 @@
           }
 
           &::after {
-            left: 100%;
             width: 0%;
+            left: 100%;
             transition: all ease 0.2s;
           }
         }
@@ -112,24 +116,12 @@
   }
 }
 
-.visible {
-  display: block;
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 2;
-}
-
-@media screen and (min-width: 200px) and (max-width: 600px) {
+@media screen and (min-width: 200px) and (max-width: 400px) {
   .Card {
-    padding: 0.5rem 1rem;
+    padding: 1rem;
     margin: 2rem auto;
     position: relative;
-    width: 90%;
+    width: 80%;
 
     &-img {
       display: block;
@@ -139,7 +131,7 @@
         display: none;
       }
       img {
-        height: 200px;
+        height: 140px;
         margin: auto;
       }
     }
@@ -148,10 +140,61 @@
       padding: 0 1rem;
       font-size: 0.7rem;
 
+      &-credentials {
+        display: none;
+      }
+
       &-details {
-        width: 100%;
+        display: none;
+
+        img {
+          height: 30px;
+        }
+      }
+
+      &-links {
         font-size: 0.6rem;
-        justify-content: space-between;
+        a {
+          &::before,
+          &::after {
+            height: 1px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 1280px) {
+  .Card {
+    padding: 1rem;
+    margin: 2rem auto;
+    position: relative;
+    width: 80%;
+
+    &-img {
+      display: block;
+      height: auto;
+
+      &-mobile {
+        display: none;
+      }
+      img {
+        height: 170px;
+        margin: auto;
+      }
+    }
+
+    &-info {
+      padding: 0 1rem;
+      font-size: 0.7rem;
+
+      &-credentials {
+        display: none;
+      }
+
+      &-details {
+        display: none;
 
         img {
           height: 30px;
@@ -172,9 +215,6 @@
 
 @media screen and (min-width: 600px) and (max-width: 800px) {
   .Card {
-    padding: 0.5rem 1rem;
-    margin: 2rem auto;
-    position: relative;
     width: 80%;
 
     &-img {
@@ -185,42 +225,27 @@
         display: none;
       }
       img {
-        height: 220px;
+        height: 200px;
         margin: auto;
       }
     }
 
     &-info {
-      padding: 0 1rem;
       font-size: 0.8rem;
 
       &-details {
-        width: 100%;
         font-size: 0.7rem;
-        justify-content: space-between;
 
         img {
           height: 35px;
-        }
-      }
-
-      &-links {
-        a {
-          &::before,
-          &::after {
-            height: 1px;
-          }
         }
       }
     }
   }
 }
 
-@media screen and (min-width: 800px) and (max-width: 1000px) {
+@media screen and (min-width: 800px) and (max-width: 1280px) {
   .Card {
-    padding: 0.5rem 1rem;
-    margin: 2rem auto;
-    position: relative;
     width: 80%;
 
     &-img {
@@ -235,25 +260,13 @@
     }
 
     &-info {
-      padding: 0 1rem;
       font-size: 0.8rem;
 
       &-details {
-        width: 100%;
         font-size: 0.7rem;
-        justify-content: space-between;
 
         img {
           height: 35px;
-        }
-      }
-
-      &-links {
-        a {
-          &::before,
-          &::after {
-            height: 1px;
-          }
         }
       }
     }
@@ -262,41 +275,19 @@
 
 @media screen and (min-width: 1000px) and (max-width: 1280px) {
   .Card {
-    padding: 0.5rem 1rem;
-    margin: 2rem auto;
-    position: relative;
-    width: 80%;
-
     &-img {
-      display: flex;
-      height: auto;
-      justify-content: space-evenly;
-
       img {
         height: 260px;
       }
     }
-
     &-info {
-      padding: 0 1rem;
       font-size: 1rem;
 
       &-details {
-        width: 100%;
         font-size: 0.9rem;
-        justify-content: space-between;
 
         img {
           height: 40px;
-        }
-      }
-
-      &-links {
-        a {
-          &::before,
-          &::after {
-            height: 1px;
-          }
         }
       }
     }

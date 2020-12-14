@@ -1,14 +1,14 @@
-import { NavHashLink, HashLink } from 'react-router-hash-link';
-import './Navigation.scss';
+import { NavHashLink } from 'react-router-hash-link';
 import logo from '../img/logo.png';
+import './Navigation.scss';
 
 const Navigation = () => {
   return (
     <div className="Navigation">
       <a href="" className="Navigation-logo">
-        <HashLink smooth to="#home">
+        <NavHashLink smooth to="#home">
           <img src={logo} alt="logo" />
-        </HashLink>
+        </NavHashLink>
       </a>
       <ul className="Navigation-list">
         <li>

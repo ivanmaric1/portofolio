@@ -1,0 +1,134 @@
+.Spnft {
+  display: none;
+  position: fixed;
+  height: 70%;
+  width: 70%;
+  top: 15%;
+  left: 15%;
+  right: 0;
+  bottom: 0;
+  padding: 1rem;
+  background-color: #5e6b66;
+  border: 1px solid var(--main-green);
+  color: var(--main-green);
+  font-family: var(--main-font);
+  z-index: 2;
+  overflow: auto;
+  animation: show 1s;
+
+  &-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.9rem;
+
+    &-btn {
+      align-self: flex-start;
+      padding: 0.5rem 1rem;
+      border: 1px solid var(--main-green);
+      background-color: transparent;
+      color: var(--main-green);
+      font-size: 1.2rem;
+      cursor: pointer;
+      transition: all 0.8s ease-out;
+
+      &:hover {
+        color: var(--dark-background);
+        background-color: var(--main-green);
+      }
+    }
+
+    h1 {
+      margin: 0;
+    }
+  }
+
+  &-info {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 0.8rem;
+
+    &-background,
+    &-box {
+      flex: 1;
+    }
+
+    &-box {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+  }
+
+  &-pages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 45%;
+      margin: 1rem;
+    }
+  }
+
+  &-mobile {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+
+    img {
+      height: 200px;
+    }
+  }
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media screen and (min-width: 200px) and (max-width: 850px) {
+  .Spnft {
+    width: 80%;
+    left: 5%;
+
+    &-header {
+      font-size: 0.7rem;
+
+      &-btn {
+        font-size: 1rem;
+      }
+    }
+
+    &-info {
+      display: flex;
+      flex-direction: column;
+      font-size: 0.7rem;
+    }
+
+    &-pages {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      img {
+        width: 95%;
+        margin: 0.5rem;
+      }
+    }
+
+    &-mobile {
+      padding: 0.5rem;
+
+      img {
+        height: 150px;
+      }
+    }
+  }
+}

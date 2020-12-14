@@ -1,4 +1,3 @@
-import React from 'react';
 import './About.scss';
 import html from '../img/programs/html5.png';
 import css from '../img/programs/css3.png';
@@ -29,39 +28,40 @@ const About = () => {
             currently looking for a job in the Zagreb area and updating my
             portofolio.{' '}
           </p>
+          <p>Here are a few technologies I've been working with recently:</p>
+          <ul className="About-programs">
+            <li>
+              <img src={html} alt="" />
+            </li>
+            <li>
+              <img src={css} alt="" />
+            </li>
+            <li>
+              <img src={js} alt="" />
+            </li>
+            <li>
+              <img src={sass} alt="" />
+            </li>
+            <li>
+              <img src={react} alt="" />
+            </li>
+            <li>
+              <img src={typescript} alt="" />
+            </li>
+            <li>
+              <img src={xd} alt="" />
+            </li>
+            <li>
+              <img src={ps} alt="" />
+            </li>
+            <li>
+              <img src={git} alt="" />
+            </li>
+            <li>
+              <img src={github} alt="" />
+            </li>
+          </ul>
         </div>
-        <ul className="About-programs">
-          <li>
-            <img src={html} alt="" />
-          </li>
-          <li>
-            <img src={css} alt="" />
-          </li>
-          <li>
-            <img src={js} alt="" />
-          </li>
-          <li>
-            <img src={sass} alt="" />
-          </li>
-          <li>
-            <img src={react} alt="" />
-          </li>
-          <li>
-            <img src={typescript} alt="" />
-          </li>
-          <li>
-            <img src={xd} alt="" />
-          </li>
-          <li>
-            <img src={ps} alt="" />
-          </li>
-          <li>
-            <img src={git} alt="" />
-          </li>
-          <li>
-            <img src={github} alt="" />
-          </li>
-        </ul>
       </div>
       <div className="About-img">
         <img src={about1} alt="aboutImage" />
