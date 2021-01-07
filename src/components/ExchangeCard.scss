@@ -1,4 +1,4 @@
-.Screen {
+.Exchange {
   display: none;
   position: fixed;
   height: 70%;
@@ -15,6 +15,10 @@
   z-index: 2;
   overflow: auto;
   animation: show 1s;
+
+  &-info {
+    font-size: 0.9rem;
+  }
 
   &-header {
     display: flex;
@@ -61,7 +65,7 @@
     padding: 2rem;
 
     img {
-      height: 250px;
+      height: 350px;
     }
   }
   &-bottom {

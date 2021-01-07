@@ -40,6 +40,14 @@ const ScreenCard: React.FC<Props> = ({ setOverlay, removeOverlay }) => {
           <img src={mobile1} alt="" className="mobile-pic" />
           <img src={mobile2} alt="" className="mobile-pic" />
         </div>
+        <div className="Screen-bottom">
+          <button
+            onClick={() => removeOverlay('Screen')}
+            className="Screen-header-btn"
+          >
+            Back
+          </button>
+        </div>
       </div>
       <div className="Card">
         <div className="Card-img">

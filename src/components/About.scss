@@ -8,6 +8,11 @@
   background-color: var(--light-green);
   font-family: var(--main-font);
 
+  h1 {
+    margin: 0;
+    font-size: 2rem;
+  }
+
   &-img {
     display: flex;
     flex-direction: column;
@@ -29,17 +34,24 @@
     flex: 4;
     color: var(--main-grey);
     line-height: 1.6;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
+
+    &-headline {
+      i {
+        margin-left: 2rem;
+        animation: opacity 2s infinite linear;
+      }
+    }
   }
 
   &-programs {
     display: flex;
     justify-content: space-evenly;
-    padding: 2rem;
+    padding: 1rem 2rem 2rem 2rem;
     list-style: none;
 
     img {
-      height: 60px;
+      height: 50px;
     }
   }
 }
@@ -102,5 +114,14 @@
         height: 50px;
       }
     }
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }

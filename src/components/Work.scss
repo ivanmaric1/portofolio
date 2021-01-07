@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-around;
   width: 80vw;
-  margin: auto;
+  margin: 5vh auto;
   padding-top: 10vh;
 
   &-img {
@@ -23,6 +23,31 @@
 
   &-projects {
     padding: 1rem;
+
+    &-headline {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      &-icons {
+        color: var(--main-green);
+
+        &.small {
+          animation: forward 4s infinite linear;
+        }
+        &.big {
+          animation: backward 4s infinite linear;
+        }
+      }
+      h1 {
+        margin: 0;
+        font-size: 2rem;
+        font-family: var(--main-font);
+        text-align: center;
+        color: var(--main-grey);
+      }
+    }
   }
 }
 
@@ -62,5 +87,23 @@
         height: 130px;
       }
     }
+  }
+}
+
+@keyframes forward {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes backward {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
   }
 }

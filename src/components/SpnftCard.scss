@@ -82,6 +82,11 @@
       height: 200px;
     }
   }
+
+  &-bottom {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 @keyframes show {
@@ -127,7 +132,7 @@
       padding: 0.5rem;
 
       img {
-        height: 150px;
+        height: 250px;
       }
     }
   }

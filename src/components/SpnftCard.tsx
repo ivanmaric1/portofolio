@@ -83,6 +83,14 @@ const SpnftCard: React.FC<Props> = ({ setOverlay, removeOverlay }) => {
           <img src={mobile3} alt="" className="mobile-pic" />
           <img src={mobile4} alt="" className="mobile-pic" />
         </div>
+        <div className="Spnft-bottom">
+          <button
+            onClick={() => removeOverlay('Spnft')}
+            className="Spnft-header-btn bottom"
+          >
+            Back
+          </button>
+        </div>
       </div>
       <div className="Card">
         <div className="Card-img">
